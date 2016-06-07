@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 until curl -XGET elasticsearch:9200/; do
   >&2 echo "Elasticsearch is unavailable - sleeping"
   sleep 5
